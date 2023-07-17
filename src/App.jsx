@@ -44,7 +44,7 @@ function App() {
             />
           </svg>
         </button>
-        <img src={images[imageIndex]} width={1080} height={700} />
+        <img src={images[imageIndex]} style={{ width: "100%", height: 700 }} />
         <button onClick={() => setImageIndex(imageIndex + 1)} className="btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
