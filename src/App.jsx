@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div className="d-flex">
+      <div className="d-flex justify-center">
         <button onClick={() => setImageIndex(imageIndex - 1)} className="btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ function App() {
             />
           </svg>
         </button>
-        <img src={images[imageIndex]} width={800} />
+        <img src={images[imageIndex]} width={1080} height={700} />
         <button onClick={() => setImageIndex(imageIndex + 1)} className="btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +61,38 @@ function App() {
             />
           </svg>
         </button>
+      </div>
+      <div className=" d-flex flex-row justify-center">
+        <div
+          className={
+            "point cursor-pointer " + (imageIndex == 0 ? " current" : " ")
+          }
+          onClick={() => setImageIndex(0)}
+        ></div>
+        <div
+          className={
+            "point cursor-pointer " + (imageIndex == 1 ? " current" : " ")
+          }
+          onClick={() => setImageIndex(1)}
+        ></div>
+        <div
+          className={
+            "point cursor-pointer " + (imageIndex == 2 ? " current" : " ")
+          }
+          onClick={() => setImageIndex(2)}
+        ></div>
+        <div
+          className={
+            "point cursor-pointer " + (imageIndex == 3 ? " current" : " ")
+          }
+          onClick={() => setImageIndex(3)}
+        ></div>
+        <div
+          className={
+            "point cursor-pointer " + (imageIndex == 4 ? " current" : " ")
+          }
+          onClick={() => setImageIndex(4)}
+        ></div>
       </div>
     </>
   );

@@ -17,3 +17,23 @@
 .d-flex {
   display: flex;
 }
+.flex-row {
+  flex-direction: row;
+}
+.justify-center {
+  justify-content: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.current {
+  transform: scale(1.5);
+  filter: brightness(0.4);
+}
+.point {
+  border-radius: 100%;
+  width: 5px;
+  margin: 5px;
+  height: 5px;
+  background-color: rgb(228, 228, 228);
+}
